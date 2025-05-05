@@ -12,10 +12,10 @@ else
 	exit 99
 fi
 
-if ! [[ -f 'MechanicalMastery-Server-r1.5.0-fix.zip' ]]; then
+if ! [[ -f 'MechanicalMastery-Server-r1.4.1.zip' ]]; then
 	rm -fr defaultconfigs config kubejs libraries mods Simple.zip forge*
-	curl -Lo 'MechanicalMastery-Server-r1.5.0-fix.zip' 'https://edge.forgecdn.net/files/5330/770/MechanicalMastery-Server-r1.5.0-fix.zip' || exit 9
-	unzip -u -o 'MechanicalMastery-Server-r1.5.0-fix.zip' -d /data
+	curl -Lo 'MechanicalMastery-Server-r1.4.1.zip' 'https://edge.forgecdn.net/files/4649/783/MechanicalMastery-Server-r1.4.1.zip' || exit 9
+	unzip -u -o 'MechanicalMastery-Server-r1.4.1.zip' -d /data
 	curl -Lo forge-${FORGE_VERSION}-installer.jar http://files.minecraftforge.net/maven/net/minecraftforge/forge/$FORGE_VERSION/forge-$FORGE_VERSION-installer.jar
 	java -jar forge-${FORGE_VERSION}-installer.jar --installServer
 fi

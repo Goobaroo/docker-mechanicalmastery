@@ -2,9 +2,9 @@
 
 FROM openjdk:17-buster
 
-LABEL version="1.5.0"
+LABEL version="1.4.1"
 LABEL homepage.group=Minecraft
-LABEL homepage.name="Mechanical Mastery-r1.5.0"
+LABEL homepage.name="Mechanical Mastery-r1.4.1"
 LABEL homepage.icon="https://media.forgecdn.net/avatars/611/624/637996243327645389.png"
 LABEL homepage.widget.type=minecraft
 LABEL homepage.widget.url=udp://Mechanical-Mastery:25565
